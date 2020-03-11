@@ -1,0 +1,6 @@
+smbclient --list //example.com/ -U ""
+smbclient //example.com/map -U ""
+smbmap -H example.com
+
+lookupsid.py (Impacket)
+psexec.py (Impacket)
