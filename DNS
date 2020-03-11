@@ -1,0 +1,1 @@
+dig axfr example.com @example.com
