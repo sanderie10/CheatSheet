@@ -1,0 +1,31 @@
+nmap 
+nmap -sC -sV -p- -v -oA naam 10.10.10.X 
+
+Windows Ports:
+-21 = FTP
+-22 = SSH
+-23 = TELNET
+-53 = DNS
+-80 = HTTP
+-88 = KERBEROS
+-135 = MSRPC
+-139 = Netbios-SSN
+-389 = Active Directory LDAP
+-443 = HTTPS
+-445 = Microsoft-DS
+-464
+-593 = RPC over HTTP
+-636
+-3268 = Active Directory LDAP
+-3269
+-5985 = HTTP API
+-49152
+-49153
+-49154
+-49155
+-49156
+-49157 = RPC over HTTP
+-49158
+
+
+Linux Ports:
