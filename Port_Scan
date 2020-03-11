@@ -2,23 +2,24 @@ nmap
 nmap -sC -sV -p- -v -oA naam 10.10.10.X 
 
 Windows Ports:
--21 = FTP
--22 = SSH
+-21 = FTP = Microsoft ftpd
+-22 = SSH = OpenSSH
 -23 = TELNET
 -53 = DNS
--80 = HTTP
+-80 = HTTP = Microsoft IIS, Indy
 -88 = KERBEROS
--135 = MSRPC
--139 = Netbios-SSN
+-135 = MSRPC = Microsoft Windows RPC
+-139 = Netbios-SSN = Netbios-SSN
 -389 = Active Directory LDAP
 -443 = HTTPS
--445 = Microsoft-DS
+-445 = Microsoft-DS = Windows Server
 -464
 -593 = RPC over HTTP
 -636
 -3268 = Active Directory LDAP
 -3269
 -5985 = HTTP API
+-8080 = HTTP = Apache Tomcat
 -49152
 -49153
 -49154
@@ -29,3 +30,20 @@ Windows Ports:
 
 
 Linux Ports:
+-21 = Vsftpd
+-22 = SSH = OpenSSH
+-53 = Domain = ISC BIND
+-80 = HTTP = Apache Httpd, Nginx, Node.js
+-111 = RPCBIND
+-139 = Netbios-ssn = Samba
+-443 = HTTPS = Apache httpd
+-445 = Netbios-SSN = Samba
+-2191 = Tvbus
+-3000 = HTTP = Node.js
+-3283 = Netassistant
+-5087 = Biotic
+-5962 =
+-6200 = lm-x = Psy Shell
+-6697 (Poort 6000-7000 is with rpcbin) = IRC = UnrealIRCd
+-9200 = HTTP = Nginx
+-9999 = HTTP = Nginx
