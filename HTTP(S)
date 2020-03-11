@@ -1,0 +1,25 @@
+Directories:
+/usr/share/dirbuster/wordlists/directory-list-1.0.txt
+/usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt
+/usr/share/dirbuster/wordlists/directory-list-2.3-smal.txt
+/usr/share/dirb/wordlists/big.txt
+/usr/share/dirb/wordlists/common.txt
+
+dirb http://hackthebox.htb/ /usr/share/dirb/wordlists/big.txt -o dirb_output
+gobuster dir -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -t 50 -o directory_output -u hackthebox.htb
+
+Subdomains:
+/usr/share/dnsmap/wordlist_TLAs.txt
+/usr/share/dnsenum/dns.txt
+/usr/share/dnsrecon/namelist.txt
+/usr/share/fierce/hosts.txt
+/usr/share/amass/wordlists/all.txt
+/usr/share/amass/wordlists/subdomains-top1mil-5000.txt
+
+wfuzz -c -w /usr/share/amass/wordlists/subdomains-top1mil-5000.txt -hc 400,403,404 -H "Host: FUZZ.hackthebox.htb" -u http://hackthebox.htb -t 100
+gobuster dns -w /usr/share/amass/wordlists/subdomains-top1mil-5000.txt -t 50 -o gobuster_output -d hackthebox.htb 
+
+Burp Suite
+Nikto
+WhatWeb
+Wpscan
