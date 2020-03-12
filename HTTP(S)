@@ -7,6 +7,7 @@ Directories:
 
 dirb http://hackthebox.htb/ /usr/share/dirb/wordlists/big.txt -o dirb_output
 gobuster dir -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -t 50 -o directory_output -u hackthebox.htb
+gobuster -k -u -w
 
 Subdomains:
 /usr/share/dnsmap/wordlist_TLAs.txt
@@ -19,6 +20,12 @@ Subdomains:
 wfuzz -c -w /usr/share/amass/wordlists/subdomains-top1mil-5000.txt -hc 400,403,404 -H "Host: FUZZ.hackthebox.htb" -u http://hackthebox.htb -t 100
 gobuster dns -w /usr/share/amass/wordlists/subdomains-top1mil-5000.txt -t 50 -o gobuster_output -d hackthebox.htb 
 
+LFI/Directory traversal:
+../../../etc/passwd
+../
+echo -n "../.ssh/id_rsa" | base64
+
+Tools:
 Burp Suite
 Nikto
 WhatWeb
