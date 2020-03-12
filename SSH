@@ -2,6 +2,6 @@ Openssl rsa
 
 user/id_rsa
 chmod 600 id_rda
-ssh2john.py id_rsa > id_rsa.hash
+python /usr/share/john/ssh2john.py id_rsa > id_rsa.hash
 john --wordlist=/usr/share/wordlists/rockyou.txt id_rsa.hash
 ssh -i id_rsa user@10.10.10.X
