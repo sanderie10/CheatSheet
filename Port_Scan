@@ -10,13 +10,13 @@ Windows Ports:
 -88 = KERBEROS
 -135 = MSRPC = Microsoft Windows RPC
 -139 = Netbios-SSN = Netbios-SSN
--389 = Active Directory LDAP
+-389 = Active Directory LDAP (Domain: ...)
 -443 = HTTPS
 -445 = Microsoft-DS = Windows Server 2016 standard 14393
 -464
 -593 = RPC over HTTP
 -636
--3268 = Active Directory LDAP
+-3268 = Active Directory LDAP (Domain: ...)
 -3269
 -5985 = HTTP = Microsoft HTTPAPI httpd 2.0
 -8080 = HTTP = Apache Tomcat
