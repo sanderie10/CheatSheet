@@ -2,5 +2,22 @@ smbclient --list //example.com/ -U ""
 smbclient //example.com/map -U ""
 smbmap -H example.com
 
+rpcclient -U "" example.com
+> enumdomusers
+> enumdomgroups
+> querygroup 0x204
+> queryuser 0x3e8
+> getdompwinfo
+> getusrdompwinfo 0x44f
+enum4linux -a example.com
+-Get Userlist
+-Get Sharelist
+-Get Group and Member list
+-Get Password policy information
+-Enumerate users via RID cycling
+-Get OS information
+-Do an nmblookup (Similar to nbtstat)
+-Get printer infromation
+
 lookupsid.py (Impacket)
 psexec.py (Impacket)
