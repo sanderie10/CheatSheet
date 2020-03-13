@@ -12,22 +12,29 @@ Windows Ports:
 -139 = Netbios-SSN = Netbios-SSN
 -389 = Active Directory LDAP
 -443 = HTTPS
--445 = Microsoft-DS = Windows Server
+-445 = Microsoft-DS = Windows Server 2016 standard 14393
 -464
 -593 = RPC over HTTP
 -636
 -3268 = Active Directory LDAP
 -3269
--5985 = HTTP API
+-5985 = HTTP = Microsoft HTTPAPI httpd 2.0
 -8080 = HTTP = Apache Tomcat
+-9389 = mc-nmf = .NET Message Framing
 -49152
 -49153
 -49154
 -49155
 -49156
 -49157 = RPC over HTTP
--49158
-
+-49158 = MSRPC = Microsoft Windows RPC
+-49664 = MSRPC = Microsoft Windows RPC
+-49665 = MSRPC = Microsoft Windows RPC
+-49666 = MSRPC = Microsoft Windows RPC
+-49667 = MSRPC = Microsoft Windows RPC
+-49676 = ncacn_http = Microsoft Windows RPC over HTTP 1.0
+-49677 = MSRPC = Microsoft Windows RPC
+-49684 = MSRPC = Microsoft Windows RPC
 
 Linux Ports:
 -21 = Vsftpd
