@@ -1,0 +1,6 @@
+msfconsole
+use auxiliary/gather/kerberos_enumusers
+DOMAIN = LDAP domain.
+RHOSTS = IP/example.com
+RPORT = 88
+USER_FILE = users.txt from samba enum.
