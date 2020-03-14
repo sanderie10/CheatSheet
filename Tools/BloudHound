@@ -1,0 +1,24 @@
+> git clone https://github.com/BloodHoundAD/BloodHound.git
+> cd BloodHound/Ingestors
+-SharpHound.exe / SharpHound.ps1
+./SharpHound.exe
+
+> unzip Date_BloodHound.zip
+.groups.json
+-ous.json
+-users.json
+-computers.json
+-domains.json
+-gpos.json
+
+> apt-get install bloodhound
+> neo4j console
+http://localhost:7474
+host: bolt://localhost:7687
+username: neo4j
+password: neo4j
+
+> bloudhound
+Database URL: bolt://127.0.0.1:7687
+DB Username: neo4j
+DB Password neo4j
