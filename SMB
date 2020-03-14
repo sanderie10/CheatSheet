@@ -19,6 +19,8 @@ enum4linux -a example.com
 -Do an nmblookup (Similar to nbtstat)
 -Get printer infromation
 
+python GetNPUsers.py domain/user -no-pass
+
 addcomputer.py domain/username:password
 atexec.py domain/username:password@example.com <Command>
 dcomexec.py domain/username:password@example.com <Command> if not > spawn semi-interactive shell
