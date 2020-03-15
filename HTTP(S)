@@ -6,7 +6,8 @@ Directories:
 /usr/share/dirb/wordlists/common.txt
 
 dirb http://hackthebox.htb/ /usr/share/dirb/wordlists/big.txt -o dirb_output
-gobuster dir -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -t 50 -o directory_output -u hackthebox.htb
+gobuster dir -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -t 50 -o gobuster_output -u hackthebox.htb
+gobuster dir -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -t 100 -o gobuster_output -x php -u hackthebox.htb
 gobuster -k -u -w
 
 Subdomains:
